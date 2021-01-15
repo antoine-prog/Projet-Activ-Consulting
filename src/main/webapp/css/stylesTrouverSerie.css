@@ -1,0 +1,35 @@
+.recommandation {
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: teal;
+	width: auto;
+	box-shadow: -8px 12px 6px rgba(0, 0, 0, 0.5);
+}
+
+.card-img-top {
+	height: 20rem;
+}
+
+.card-footer {
+	height: 5rem;
+}
+
+/**33333333333333---Slick slider----333333333333333333**/
+.slider {
+	width: 90%;
+	margin: 10px auto;
+}
+
+.slick-slide {
+	margin: 0px 10px;
+}
+
+.slick-slide img {
+	width: 100%;
+}
+
+.slick-prev:before, .slick-next:before {
+	color: black;
+}

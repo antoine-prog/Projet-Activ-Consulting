@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+     http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+    http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd ">
+	
+	<!--  ____________________________EXEMPLE________________________________  -->
+		<!--  Demande de création de l'instance de la factory -->
+		<!--  Cette instance se nommera fabriqueBeignets -->
+	  	<bean id="fabriqueBeignets" class="beans.FabriqueBeignets"> 
+			<property name="nom" value="maFabrique"/>
+	  	</bean>
+
+	   	<bean id="canapeI" class="beans.Canape">
+			<constructor-arg value="7"/>
+			<constructor-arg value="bleue"/>
+			<constructor-arg value="trait"/>
+		</bean>
+ 		<bean id="appartementI" class="beans.Appartement">
+			<property name="nombrePieces" value="15"/>
+			<property name="superficie" value="3000"/>
+			<property name="couleurMurs" value="blanc"/>
+			<property name="typeSol" value="parquet"/>
+		</bean>  
+		 	<bean id="loggeur" class="services.Loggeur">
+		</bean>
+		
+		<aop:config>
+			<!-- Nomage de l'aspect (id) et définition de son périmètre d'execution (expression) -->
+			<!-- Ici, le périmètre est la méthode toString de toutes les classe de beans -->
+			<aop:pointcut id="serviceLog" expression="execution(* beans.*.toString(..))"/>
+			<!-- Les appels aux méthodes visés seront renvoyées à l'instance "loggeur"' -->
+			<aop:aspect id="nomAspect" ref="loggeur">
+				<!-- Avant(before) la méthode visée on appelle "methodeAvant" -->
+				<aop:before method="methodeAvant" pointcut-ref="serviceLog"/>
+				<!-- Apres(after) la méthode visée on appelle "methodeApres" -->
+				<!-- Et on fourni à methodeApres le retour de la méthode visée" -->
+				<aop:after-returning method="methodeApres" returning="result" pointcut-ref="serviceLog"/>
+			</aop:aspect>
+		</aop:config>
+		<!--  ____________________________FIN EXEMPLE________________________________  -->
+		
+		
+		
+		
+		
+		
+			
+</beans>
+	
+	
+  

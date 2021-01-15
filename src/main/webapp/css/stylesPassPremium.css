@@ -1,0 +1,200 @@
+/* Importation police contenues dans le dossier */
+@font-face{
+    font-family: "Quicksand";
+    src: url("./font/Quicksand-Bold.otf");
+}
+
+h3 {
+	font-size: 30px;
+	margin-bottom: 5px;
+	color: #000;
+}
+
+.wrapper {
+	max-width: 90rem;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+/* Barre de navigation Mon profil etc. */
+.navbar-nav {
+	flex: 1;
+	display: flex;
+	justify-content: space-around;
+}
+
+section.teasers {
+	padding-top: 120px;
+	padding-bottom: 5px;
+	text-shadow: 0 2px 7px rgba(0, 0, 0, 0.35);
+	background: linear-gradient(left, #646464, #646464) no-repeat 0px 140px;
+	box-shadow: -8px 12px 6px rgba(0, 0, 0, 0.5);
+}
+
+section.teasers ul {
+	display: grid;
+	grid-template-columns: repeat(3, 2fr);
+	grid-column-gap: 20px;
+	padding: 0;
+	color: #000;
+}
+
+section.teasers ul li {
+	background-color: aliceblue;
+	list-style: none;
+	margin-top: 0;
+	position: relative;
+	overflow: hidden;
+	-webkit-transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+	-moz-transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+	-ms-transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+	-o-transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+	transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+section.teasers ul li .callout {
+	position: absolute;
+	left: 20px;
+	right: 20px;
+	-webkit-transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+	-moz-transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+	-ms-transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+	-o-transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+	transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+section.teasers ul li a {
+	margin-top: 10px; 
+	border : 2px solid #fff;
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 10px;
+	text-align: center;
+/* 	color: #fff; */
+	color: #000;
+	text-decoration: none;
+	margin-bottom: 20px;
+	opacity: 0;
+	-webkit-transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+	-moz-transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+	-ms-transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+	-o-transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+	transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+	border: 2px solid #fff;
+}
+
+section.teasers ul li a:hover {
+	background-color: #fff;
+	color: #000;
+}
+
+section.teasers ul li:nth-child(1) {
+	height: 432px;
+	margin-top: 65px;
+	background-image:
+		url("https://i1.wp.com/blog.ninaah.com/wp-content/uploads/2018/04/180331_Jinhae_Ninah_031.jpg?resize=1150%2C767&ssl=1");
+}
+
+section.teasers ul li:nth-child(1):hover {
+	margin-top: -100px;
+	height: 597px;
+}
+
+section.teasers ul li:nth-child(1):hover .callout {
+	bottom: 0%;
+}
+
+section.teasers ul li:nth-child(1) .callout {
+	bottom: -230px;
+}
+
+section.teasers ul li:nth-child(2) {
+	height: 432px;
+	margin-top: 65px;
+	background-image:
+		url("https://i.pinimg.com/564x/d2/27/8b/d2278b71927f22a7325ce6d25df34ed3.jpg");
+}
+
+section.teasers ul li:nth-child(2):hover {
+	margin-top: -100px;
+	height: 597px;
+}
+
+section.teasers ul li:nth-child(2):hover .callout {
+	bottom: 0%;
+}
+
+section.teasers ul li:nth-child(2) .callout {
+	 bottom: -248px;
+}
+
+section.teasers ul li:nth-child(3) {
+	height: 432px;
+	margin-top: 65px;
+	background-image:
+		url("https://www.lespierresdejulie.com/images-bijoux-paris/files/2018/05/diamant-gemmes-paris.jpg");
+}
+
+section.teasers ul li:nth-child(3):hover {
+	margin-top: -100px;
+	height: 597px;
+}
+
+section.teasers ul li:nth-child(3):hover .callout {
+	bottom: 0%;
+}
+
+section.teasers ul li:nth-child(3) .callout {
+	bottom: -300px;
+}
+
+section.teasers ul li:hover {
+	-webkit-transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+	-moz-transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+	-ms-transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+	-o-transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+	transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+section.teasers ul li:hover .callout {
+	position: absolute;
+	-webkit-transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+	-moz-transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+	-ms-transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+	-o-transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+	transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+section.teasers ul li:hover a {
+	opacity: 1;
+}
+
+@media only screen and (max-width: 840px) {
+	section.teasers ul {
+		grid-template-columns: 1fr;
+	}
+	section.teasers ul li:nth-child(1), section.teasers ul li:nth-child(2),
+		section.teasers ul li:nth-child(3) {
+		height: 371px;
+		margin-top: 0;
+		margin-bottom: 20px;
+		background-size: cover;
+	}
+	section.teasers ul li:nth-child(1):hover, section.teasers ul li:nth-child(2):hover,
+		section.teasers ul li:nth-child(3):hover {
+		height: 371px;
+		margin-top: 0;
+	}
+	section.teasers ul li:nth-child(1):hover .callout, section.teasers ul li:nth-child(2):hover .callout,
+		section.teasers ul li:nth-child(3):hover .callout {
+		bottom: 10px;
+	}
+	section.teasers ul li:nth-child(1) .callout, section.teasers ul li:nth-child(2) .callout,
+		section.teasers ul li:nth-child(3) .callout {
+		bottom: 20px;
+	}
+	section.teasers ul li a {
+		opacity: 1;
+	}
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+		<!-- Interactions avec la BDD -->
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost/sajproject?useUnicode=true&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">pass</property>
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		
+		<!-- Seront indiqués ici les fichiers de mapping -->
+		<mapping class="beans.Utilisateur"/>
+		<mapping class="beans.CompteBancaire"/>
+		<mapping class="beans.AnimeReview"/>
+		<mapping class="beans.EpisodeAnimeReview"/>
+		<mapping class="beans.FilmReview"/>
+		<mapping class="beans.SerieReview"/>
+		<mapping class="beans.EpisodeSerieReview"/>
+		
+		
+		<mapping class="beans.AnimeSaisonVu"/>
+		<mapping class="beans.EpisodeAnimeSaisonVu"/>
+		<mapping class="beans.SerieSaisonVu"/>
+		<mapping class="beans.EpisodeSerieSaisonVu"/>
+		<mapping class="beans.FilmVu"/>
+		
+	</session-factory>
+</hibernate-configuration>

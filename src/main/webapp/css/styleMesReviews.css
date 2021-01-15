@@ -1,0 +1,36 @@
+/* Taille police main */
+main {
+	font-size: 1.3rem;
+}
+
+/* Barre de navigation Mon profil etc. */
+.navbar-nav {
+	flex: 1;
+	display: flex;
+	justify-content : space-around;
+}
+
+/* Flex: taille colonne date */
+.taille-flex-date {
+	flex-basis: 10%;
+}
+
+/* Flex: taille colonne affiche */
+.taille-flex-affiche {
+	flex-basis: 10%;
+}
+
+/* Flex: taille colonne nom */
+.taille-flex-nom {
+	flex-basis: 15%;
+}
+
+/* Flex: taille colonne review */
+.taille-flex-review {
+	flex-basis: 55%;
+}
+
+/* Flex: taille colonne note */
+.taille-flex-note {
+	flex-basis: 10%;
+}

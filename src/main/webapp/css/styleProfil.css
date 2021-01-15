@@ -1,0 +1,54 @@
+main {
+	font-size: 1.3rem;
+}
+
+/* Barre de navigation Mon profil etc. */
+.navbar-nav {
+	flex: 1;
+	display: flex;
+	justify-content : space-around;
+}
+
+/* Taille image profil */
+#avatar {
+	width: 20rem;
+}
+
+/* Cacher div de modif de base */
+#affichageModifNationalite,
+#affichageModifAnimePrefere,
+#affichageModifFilmPrefere,
+#affichageModifSeriePreferee,
+#affichageModifDesc {
+	display: none;
+}
+
+/* Largeur des boutons identiques */
+.largeur-bouton-modif {
+	width: 145px;
+}
+
+/* Espacement entre les articles */
+article {
+	margin-top: 25px;
+}
+
+/* Seulement 2 catégories par ligne dans le 1e article */
+#contenu-article {
+	flex-basis: 45%;
+}
+
+/* Agrandissement textarea pour modif description */
+#description-textarea {
+	flex-basis: 85%
+}
+
+/* Ajustement taille flex pour infos bancaires */
+#taille-flex-info-banc-texte {
+	flex-basis: 40%
+}
+
+/* Taille logo supprimer pour PAYPAL + CB */
+main img {
+	width: 30px;
+}

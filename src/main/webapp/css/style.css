@@ -1,0 +1,345 @@
+/* Importation police contenues dans le dossier */
+@font-face{
+    font-family: "Quicksand";
+    src: url("./font/Quicksand-Regular.otf");
+}
+
+
+/*****************Global****************/
+* {
+	box-sizing: border-box;
+}
+
+html {
+	/* Mod taille de police par défaut (16px) pour que 1rem soit égale à 10px*/
+	font-size: 62.5%;
+}
+
+body {
+	font-family: Quicksand,"Source Sans Pro", sans-serif;
+	background-color: #373e57;
+	color: #ccc8db;
+}
+
+container {
+	background-color: #151728;
+	max-width: 90%;
+}
+
+/*C'est pour les espace entre la barre de rechrche et la catégorie*/
+.no-gutter>[class*='col-'] {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* Taille logo oeil fermé/ouvert */
+#logoVU {
+	width: 11rem;
+	border-radius: 20px;
+	text-align-last: center;
+	padding: 0.5rem;
+	background: #FF9800;
+	box-shadow: -0.8rem 1.2rem 0.66rem rgba(0, 0, 0, 0.5);
+}
+
+/*****************Header******************/
+header {
+	box-shadow: -8px 12px 6px rgba(0, 0, 0, 0.5);
+}
+
+.navbar {
+	background-color: #151728;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	padding: 1% 6.5% 1% 6.5%;
+}
+
+.formNav {
+	background-color: #151728;
+	padding: 2.5%;
+}
+
+.imgLogoNavBar {
+	height: 10rem;
+	transform: translate(-33px, 10px);
+}
+
+.button-recommandation {
+	transform: translate(-50px, 0px);
+}
+
+/*----Ul----*/
+.ul-button-AFMS {
+	top: 50%;
+	left: 50%;
+	display: flex;
+	margin: 0;
+	padding: 0;
+	transform: translate(-80px, 10px);
+}
+
+.li-button-AFMS {
+	list-style: none;
+	margin: 0 5px;
+}
+
+.span-button-AFMS {
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	top: 10px;
+	color: #333;
+	letter-spacing: 4px;
+	transition: 0.5s;
+}
+
+.a-button-AFMS {
+	text-decoration: none;
+	display: absolute;
+	display: block;
+	border-radius: 2px;
+	width: 60px;
+	height: 30px;
+	padding-left: 5px;
+	margin: 12px;
+	background: #fff;
+	text-align: left;
+	transform: rotate(0deg) skewX(0deg) translate(0.0);
+	box-shadow: -8px 12px 6px rgba(0, 0, 0, 0.5);
+}
+
+.a-button-AFMS:before {
+	content: '';
+	position: absolute;
+	top: 10px;
+	background: #b1b1b1;
+	transform: 0.5s;
+	transform: rotate(0deg) skewY(-43deg);
+}
+
+.a-button-AFMS:after {
+	content: '';
+	position: absolute;
+	background: #5b5858;
+	transform: 0.5s;
+	transform: rotate(0deg) skewX(-49deg);
+}
+
+.a-button-AFMS:hover {
+	transform: rotate(0deg) skew(0deg) translate(5px, -5px);
+	box-shadow: -8px 12px 6px rgba(0, 0, 0, 0.5);
+}
+
+.li-button-AFMS:hover a {
+	background: #17a2b8;
+}
+
+.btn, .form-control, .a-nav-pill {
+	font-size: 1.25rem;
+}
+
+/*****************Main********************/
+main {
+	margin-top: 20px
+}
+
+section {
+	margin-top: 20px
+}
+
+.news-annonces {
+	display: flex;
+	justify-content: space-between;
+	height: 400px;
+}
+
+.news {
+	width: 54%;
+	height: 100%;
+	background: #17a2b8;
+	box-shadow: -8px 12px 6px rgba(0, 0, 0, 0.5);
+}
+
+.annonces {
+	width: 40%;
+	height: 100%;
+	background: #727272;
+	box-shadow: -8px 12px 6px rgba(0, 0, 0, 0.5);
+}
+
+.nouveau-episode {
+	height: 200px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.n-e-Anime, .n-e-Film, .n-e-Manga, .n-e-Serie {
+	width: 20%;
+	height: 100%;
+	background: #3f86a0;
+	box-shadow: -8px 12px 6px rgba(0, 0, 0, 0.5);
+}
+
+.top {
+	height: 200px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.top-Anime, .top-Film, .top-Manga, .top-Serie {
+	width: 20%;
+	height: 100%;
+	background: #ff8080;
+	box-shadow: -8px 12px 6px rgba(0, 0, 0, 0.5);
+}
+
+.derniere-review {
+	height: 400px;
+	width: 100%;
+	background: #ff952b;
+	box-shadow: -8px 12px 6px rgba(0, 0, 0, 0.5);
+}
+
+/*------Main inscription------*/
+.main-inscription {
+	border: solid 3px #272a3a;
+	padding-left: 20px;
+	padding-bottom: 20px;
+	padding-right: 20px;
+	box-shadow: -8px 12px 6px rgba(0, 0, 0, 0.5);
+	border-radius: 20px;
+}
+/*------Main Recommandation------*/
+.mainRecommandation {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.recommandation {
+	border: solid 3px #2096dd;
+	padding : 20px;
+	margin-top: 10px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 70%;
+	box-shadow: -8px 12px 6px rgba(0, 0, 0, 0.5);
+	background-color: #151728;
+}
+
+.recommandation-oui, .recommandation-non {
+	text-align: center;
+	width: 20%;
+}
+
+.recommandation-proposition {
+	width: 280px;
+	display: flex;
+	flex-direction: column;
+	align-content: space-between;
+}
+
+.btn-dejaVu-et-note {
+	display: flex;
+	flex-direction: inherit;
+	justify-content: center;
+}
+
+.dejaVu, .note {
+	width: 20%;
+	text-align: center;
+}
+
+/*****************Footer******************/
+footer {
+	margin-top: 25px;
+	height: 95px;
+	width: 100%;
+	background-color: #151728;
+	box-shadow: -8px 12px 6px rgba(0, 0, 0, 0.5);
+}
+
+nav nav-pills {
+	position: absolute;
+	width: 100%;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.a-nav-pill {
+	width: 25%;
+	text-align: center;
+}
+
+/****************************************************
+                      RESPONSIVE
+*****************************************************/
+
+/*=============== TABLETTE =========================*/
+@media screen and (max-width:1024px) {
+	/*******************GLOBAL*********************/
+	.imgLogoNavBar {
+		transform: translate(0px, 0px);
+	}
+	.ul-button-AFMS {
+		transform: translate(0px, 0px);
+	}
+	.a-button-AFMS {
+		margin: 0px;
+	}
+	.button-recommancation {
+		transform: translate(10px, 0px);
+	}
+	.imgLogoNavBar {
+		margin-bottom: 30px;
+	}
+	.navbar {
+		justify-content: space-around;
+	}
+
+	/*******************MAIN*********************/
+	main section .flex {
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+	main article {
+		flex-basis: 60%;
+	}
+}
+
+/*=============== MOBILE =========================*/
+@media screen and (max-width:767px) {
+	/*******************GLOBAL*********************/
+	.flex {
+		flex-direction: column;
+	}
+}
+
+
+
+  ::-webkit-scrollbar {
+      width: 10px;
+      border-radius: 10px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background: rgba(255, 255, 255, 0.01);
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.11);
+      border-radius: 10px;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }

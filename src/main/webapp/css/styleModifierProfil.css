@@ -1,0 +1,17 @@
+/* Taille police main */
+main {
+	font-size: 1.3rem;
+}
+
+/* Barre de navigation Mon profil etc. */
+.navbar-nav {
+	flex: 1;
+	display: flex;
+	justify-content : space-around;
+}
+
+/* Méthodes de paiement non affichées de base */
+#formRadioPaypal,
+#formRadioCB {
+	display: none;
+}

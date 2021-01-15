@@ -1,0 +1,91 @@
+/* Taille police main */
+main {
+	font-size: 1.3rem;
+}
+
+/* Barre de navigation Mon profil etc. */
+.navbar-nav {
+	flex: 1;
+	display: flex;
+	justify-content : space-around;
+}
+
+/* Taille bouton plus */
+#boutonPlus {
+	width: 5rem;
+}
+
+/* Réglage taille du dropdown */
+#contenuADerouler {
+	transform: translate3d(-600px, 60px, 0px) !important;
+	min-width: 80rem;
+}
+
+/* Taille image résultat recherche pour ajout direct (cf. flex-basis) */
+.imgResultatRechercheAjout {
+	width: 10rem;
+}
+.logoResultatRechercheAjout {
+	width: 2rem;
+}
+
+/* Cacher tous les listes au départ */
+#animeRecherche,
+#filmRecherche,
+#serieRecherche {
+	display: none;
+	flex-basis: 30%;
+}
+
+/* Bouton ajouter à la liste tous à la même taille (1000% et pas 100% sinon ne marche pas) */
+.logoResultatRechercheAjout {
+	max-width: 1000%
+}
+
+/* Taille contenu flex titres + anime, films, séries */
+.titreNom,
+.animeNom,
+.filmNom,
+.serieNom {
+	flex-basis: 45%;
+}
+.titreStatut,
+.animeStatut,
+.filmStatut,
+.serieStatut {
+	flex-basis: 15%;
+}
+.titreNote,
+.animeNote,
+.filmNote,
+.serieNote {
+	flex-basis: 15%;
+}
+.titreVisibilite,
+.animeVisibilite,
+.filmVisibilite,
+.serieVisibilite {
+	flex-basis: 10%;
+}
+.titreSuppr,
+.animeSuppr,
+.filmSuppr,
+.serieSuppr {
+	flex-basis: 5%;
+}
+
+/* Espacement entre les articles */
+#articleAnime,
+#articleFilm {
+	margin-bottom: 8rem;
+}
+#articleFilm,
+#articleSerie {
+	margin-top: 8rem;
+}
+
+/* Taille bouton suppr dans les listes */
+#logoSuppr {
+	width: 2rem;
+	margin-top: -10px;
+}

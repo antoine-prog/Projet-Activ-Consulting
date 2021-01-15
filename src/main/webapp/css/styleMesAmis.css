@@ -1,0 +1,56 @@
+/* Taille police main */
+main {
+	font-size: 1.3rem;
+}
+
+/* Barre de navigation Mon profil etc. */
+.navbar-nav {
+	flex: 1;
+	display: flex;
+	justify-content : space-around;
+}
+
+/* Flex: taille colonne pseudo */
+.taille-flex-pseudo {
+	flex-basis: 10%;
+}
+
+/* Flex: taille colonne points contrib. */
+.taille-flex-points {
+	flex-basis: 10%;
+}
+
+/* Flex: taille colonne anime préféré */
+.taille-flex-animePrefere {
+	flex-basis: 15%;
+}
+
+/* Flex: taille colonne film préféré */
+.taille-flex-filmPrefere {
+	flex-basis: 15%;
+}
+
+/* Flex: taille colonne série pérférée */
+.taille-flex-seriePreferee {
+	flex-basis: 15%;
+}
+
+/* Flex: taille colonne amis depuis */
+.taille-flex-amisDepuis {
+	flex-basis: 10%;
+}
+
+/* Flex: taille colonne dernière connexion */
+.taille-flex-derniereCo {
+	flex-basis: 10%;
+}
+
+/* Flex: taille colonne bouton supprimer */
+.taille-flex-suppr {
+	flex-basis: 10%;
+}
+
+/* Taille image bouton suppr */
+main img {
+	width: 20px;
+}

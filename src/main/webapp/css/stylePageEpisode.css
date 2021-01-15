@@ -1,0 +1,443 @@
+/* Taille police main */
+main {
+	font-size: 1.3rem;
+}
+
+.span-episode {
+	font-size: 4rem;
+	font-weight: bold;
+	color: white;
+	background-color: red;
+	padding: 1rem;
+	margin: 2rem;
+	margin-top: 2rem;
+	border: 0.3rem ridge red;
+}
+
+
+/* Taille image épisode */
+#imageEpisodeA {
+	border-radius: 20px;
+	width: 25rem;
+	padding-bottom: 1rem;
+	padding-top: 1rem;
+	margin-bottom: 2rem;
+	background-color: #dee1e3;
+	box-shadow: -8px 12px 6px rgba(0, 0, 0, 0.5);
+}
+
+#imageEpisodeB {
+	width: 25rem;
+	margin-bottom: 2rem;
+	background-color: white;
+}
+
+/* Boutons sans style pour les smileys */
+.boutonSansDeco {
+	background-color: Transparent;
+	background-repeat: no-repeat;
+	border: none;
+	cursor: pointer;
+	overflow: hidden;
+	outline: none;
+}
+
+/* Système de notation */
+#rating-group1>label {
+	font-size: 4rem;
+}
+
+#rating-group2>label {
+	font-size: 2rem;
+}
+/*  
+ *  Pure CSS star rating that works without reversing order
+ *  of inputs
+ *  -------------------------------------------------------
+ *  NOTE: For the styling to work, there needs to be a radio
+ *        input selected by default. There also needs to be a
+ *        radio input before the first star, regardless of
+ *        whether you offer a 'no rating' or 0 stars option
+ *  
+ *  This codepen uses FontAwesome icons
+ */
+/* use display:inline-flex to prevent whitespace issues. alternatively, you can put all the children of .rating-group on a single line */
+.rating-group {
+	display: inline-flex;
+}
+
+/* make hover effect work properly in IE */
+.rating__icon {
+	pointer-events: none;
+}
+
+/* hide radio inputs */
+.rating__input {
+	position: absolute !important;
+	left: -9999px !important;
+}
+
+/* set icon padding and size */
+.rating__label {
+	cursor: pointer;
+	/* if you change the left/right padding, update the margin-right property of .rating__label--half as well. */
+	padding: 0 0.1em;
+	font-size: 2rem;
+}
+
+/* add padding and positioning to half star labels */
+.rating__label--half {
+	padding-right: 0;
+	margin-right: -0.6em;
+	z-index: 2;
+}
+
+/* set default star color */
+.rating__icon--star {
+	color: orange;
+}
+
+/* set color of none icon when unchecked */
+.rating__icon--none {
+	color: #eee;
+}
+
+/* if none icon is checked, make it red */
+.rating__input--none:checked+.rating__label .rating__icon--none {
+	color: red;
+}
+
+/* if any input is checked, make its following siblings grey */
+.rating__input:checked ~ .rating__label .rating__icon--star {
+	color: #ddd;
+}
+
+/* make all stars orange on rating group hover */
+.rating-group:hover .rating__label .rating__icon--star, .rating-group:hover .rating__label--half .rating__icon--star
+	{
+	color: orange;
+}
+
+/* make hovered input's following siblings grey on hover */
+.rating__input:hover ~ .rating__label .rating__icon--star,
+	.rating__input:hover ~ .rating__label--half .rating__icon--star {
+	color: #ddd;
+}
+
+/* make none icon grey on rating group hover */
+.rating-group:hover .rating__input--none:not(:hover) +.rating__label .rating__icon--none
+	{
+	color: #eee;
+}
+
+/* make none icon red on hover */
+.rating__input--none:hover+.rating__label .rating__icon--none {
+	color: red;
+}
+
+/* Agrandir taille de base smileys  */
+#choixSmiley button {
+	font-size: 4rem;
+}
+
+/* Smileys en gris de base */
+.boutonSmiley {
+	filter: grayscale(100%);
+}
+
+/* Taille texte en dessous des smileys */
+.desc-smiley {
+	font-size: 0.9rem;
+}
+
+/* Ne pas afficher les divs en dessous des smileys au départ */
+#afficheSiEpisodeVu {
+	display: none;
+}
+
+/* Flex: taille colonne date */
+.tableReviewDate {
+	flex-basis: 10%;
+}
+/* Flex: taille colonne utilisateur */
+.tableReviewUtilisateur {
+	flex-basis: 10%;
+}
+/* Flex: taille colonne review */
+.tableReviewReview {
+	flex-basis: 65%;
+}
+/* Flex: taille colonne note */
+.tableReviewNote {
+	flex-basis: 10%;
+}
+
+/* Taille étoiles note */
+#rating-group2 label {
+	font-size: 2rem;
+}
+
+/* Taille logo +1 et -1 commentaire */
+#logoLike, #logoDislike {
+	width: 4.5rem;
+}
+
+#afficheSiEpisodeVu {
+	margin-top: 20px;
+	padding: 20px;
+	background: #dee1e3;
+	box-shadow: -8px 12px 6px rgba(0, 0, 0, 0.5);
+}
+
+.acteurs {
+	padding: 20px;
+}
+
+.review {
+	padding: 20px;
+}
+
+#navbarReview {
+	background: #dee1e3;
+}
+
+/**
+ * Oscuro: #283035
+ * Azul: #03658c
+ * Detalle: #c7cacb
+ * Fondo: #dee1e3
+ ----------------------------------*/
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+a {
+	color: #03658c;
+	text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+}
+
+/** ====================
+* Lista de Comentarios
+=======================*/
+.comments-container {
+	padding: 5px 20px 5px 20px;
+	background: #dee1e3;
+}
+
+.comments-list {
+	margin-top: 30px;
+	position: relative;
+}
+
+/**
+* Lineas / Detalles
+-----------------------*/
+.comments-list:before {
+	content: '';
+	width: 2px;
+	height: 100%;
+	background: #c7cacb;
+	position: absolute;
+	left: 32px;
+	top: 0;
+}
+
+.comments-list:after {
+	content: '';
+	position: absolute;
+	background: #c7cacb;
+	bottom: 0;
+	left: 27px;
+	width: 7px;
+	height: 7px;
+	border: 3px solid #dee1e3;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+}
+
+.comments-list li {
+	margin-bottom: 15px;
+	display: block;
+	position: relative;
+}
+
+.comments-list li:after {
+	content: '';
+	display: block;
+	clear: both;
+	height: 0;
+	width: 0;
+}
+
+.reply-list {
+	clear: both;
+	margin-top: 15px;
+}
+/**
+* Avatar
+---------------------------*/
+.comments-list .comment-avatar {
+	width: 65px;
+	height: 65px;
+	position: relative;
+	z-index: 99;
+	float: left;
+	border: 3px solid #FFF;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+}
+
+.comments-list .comment-avatar img {
+	width: 100%;
+	height: 100%;
+}
+
+.reply-list .comment-avatar {
+	width: 50px;
+	height: 50px;
+}
+
+.comment-main-level:after {
+	content: '';
+	width: 0;
+	height: 0;
+	display: block;
+	clear: both;
+}
+/**
+* Caja del Comentario
+---------------------------*/
+.comments-list .comment-box {
+	width: 90%;
+	float: right;
+	position: relative;
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+}
+
+.comments-list .comment-box:before, .comments-list .comment-box:after {
+	content: '';
+	height: 0;
+	width: 0;
+	position: absolute;
+	display: block;
+	border-width: 10px 12px 10px 0;
+	border-style: solid;
+	border-color: transparent #FCFCFC;
+	top: 8px;
+	left: -11px;
+}
+
+.comments-list .comment-box:before {
+	border-width: 11px 13px 11px 0;
+	border-color: transparent rgba(0, 0, 0, 0.05);
+	left: -12px;
+}
+
+.reply-list .comment-box {
+	width: 610px;
+}
+
+.comment-box .comment-head {
+	background: #FCFCFC;
+	padding: 10px 12px;
+	border-bottom: 1px solid #E5E5E5;
+	overflow: hidden;
+	-webkit-border-radius: 4px 4px 0 0;
+	-moz-border-radius: 4px 4px 0 0;
+	border-radius: 4px 4px 0 0;
+}
+
+.comment-box .comment-head i {
+	float: right;
+	margin-left: 14px;
+	position: relative;
+	top: 2px;
+	color: #A6A6A6;
+	cursor: pointer;
+	-webkit-transition: color 0.3s ease;
+	-o-transition: color 0.3s ease;
+	transition: color 0.3s ease;
+}
+
+.comment-box .comment-head i:hover {
+	color: #03658c;
+}
+
+.comment-box .comment-name {
+	color: #283035;
+	font-size: 14px;
+	font-weight: 700;
+	float: left;
+	margin-right: 10px;
+}
+
+.comment-box .comment-name a {
+	color: #283035;
+}
+
+.comment-box .comment-head span {
+	float: left;
+	color: #999;
+	font-size: 13px;
+	position: relative;
+	top: 1px;
+}
+
+.comment-box .comment-content {
+	background: #FFF;
+	padding: 12px;
+	font-size: 15px;
+	color: #595959;
+	-webkit-border-radius: 0 0 4px 4px;
+	-moz-border-radius: 0 0 4px 4px;
+	border-radius: 0 0 4px 4px;
+}
+
+.comment-box .comment-name.by-author, .comment-box .comment-name.by-author a
+	{
+	color: #03658c;
+}
+
+.comment-box .comment-name.by-author:after {
+	content: 'autor';
+	background: #03658c;
+	color: #FFF;
+	font-size: 12px;
+	padding: 3px 5px;
+	font-weight: 700;
+	margin-left: 10px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+/** =====================
+* Responsive
+========================*/
+@media only screen and (max-width: 766px) {
+	.comments-container {
+		width: 480px;
+	}
+	.comments-list .comment-box {
+		width: 390px;
+	}
+	.reply-list .comment-box {
+		width: 320px;
+	}
+}

@@ -1,0 +1,249 @@
+/*****************Global****************/
+
+main {
+	font-size: 1.8rem;
+}
+
+h2{
+	margin: 0;
+}
+
+/*****************MAIN****************/
+.filtre-recherche {
+	background-color : #a7a9a7;
+	border: 1mm ridge #a7a9a7;
+	border-radius: 1em;
+	padding-left:3.5rem;
+	padding-right:3.5rem;
+	color: #404040;
+}
+
+.categorie{
+	font-size: 1.8rem;
+}
+
+.recherche-cache{
+	font-size: 1.6rem;
+}
+
+.slidecontainer {
+  width: 50%; 
+}
+
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 2.8rem; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+  border:0.1rem solid black;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 2.2rem; /* Set a specific slider handle width */
+  height: 2.8rem; /* Slider handle height */
+  background: #ff8040; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+  border:0.1rem solid black;
+}
+
+.slider::-moz-range-thumb {
+  width: 2.2rem; /* Set a specific slider handle width */
+  height: 2.8rem; /* Slider handle height */
+  background: #4CAF50; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.legendes-range-globale{
+	font-size:0.9px;
+}
+.legendes-range{
+	background-color: #d3d3d3;
+	color: black;
+	font-size:0.8rem;
+	display: inline-flex;
+	justify-content:space-between;
+	width: 50%;
+	margin:0;
+	padding:0;
+	margin-left:16.5rem;
+}
+
+.legendes-range1{
+border-left:0.1rem solid black;
+border-right:0.1rem solid black;
+border-top:0.1rem solid black;
+}
+
+.legendes-range2{
+	margin-top :0rem;
+	margin-bottom:0rem;
+	font-size:0.5rem;
+	border-left:0.1rem solid black;
+	border-right:0.1rem solid black;
+}
+
+.legende-range{
+	margin:0;
+	padding:0;
+}
+
+.select-range{
+	width: 16rem;
+}
+
+#rangeValue{
+border: 1px solid black;
+background-color: white;
+width: 45px;
+height: 28px;
+text-align: center;
+}
+
+#range-line{
+	display: flex;
+	flex-direction:row;
+	flex-wrap: wrap;
+}
+
+#bouton-recherche-block{
+	text-align:center;
+	margin-bottom: 1rem;
+}
+
+.form-control-lg{
+	height: 4.2rem;
+	font-size: 1.8rem;
+}
+
+#bouton-recherche{
+	width: 10rem; 
+	height:5rem;
+	background-color:#fbd57b;
+}
+
+
+		.resultat-recherche{
+			padding : 0.1rem;
+			border: 0.1rem solid black;
+			background-color: #a7a9a7;
+		}
+		
+		.rech-anime{
+			background-color: #555555;
+			padding: 1rem;
+		}
+		
+		.rech-film{
+			background-color: #555555;
+			padding: 1rem;
+		}
+		.rech-manga{
+			background-color: #555555;
+			padding: 1rem;
+		}
+		.rech-serie{
+			background-color: #555555;
+			padding: 1rem;
+		}
+
+
+
+.card{
+    background: #404040;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 0.5rem;
+    }
+
+.card-header{
+	display: table-cell;
+  	vertical-align: middle;
+  	line-height: normal;
+	background-color: #404040;
+	color: white;
+	text-align:center;
+	font-size: 1.2rem;
+	min-height: 3rem;
+}
+
+.img-conteneur{
+	height:25rem;
+}
+
+img{
+    display: block;
+    margin: auto;
+    height:26rem;
+    width: auto;
+}
+
+.tags{
+	background-color : #cecde0;
+	height: 2.30rem;
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+	
+}
+
+.tag{
+	font-size: 0.9rem;
+	padding: 0.25rem;
+	padding-top:0.1rem;
+	padding-bottom:0.1rem;
+	margin-top:0.3rem;
+	background-color : white;
+	border: 0.1rem solid black;
+	border-radius: 0.5em;
+	vertical-align: top;
+	display: inline-block
+}
+
+.card-text{
+font-size: 1.1rem;	
+}
+
+.card-synopsis{
+	overflow-y: auto;
+ 	height: 9rem;
+ 	margin-bottom: 0.2rem;
+}
+
+.bouton-info{
+	display:block;
+	color:white;
+	background-color: #008040;
+	border-radius: 1rem;
+}
+
+.card-info{
+	background-color: #404040;
+	color: white;
+	font-size:0.9rem;
+	display: inline-flex;
+	justify-content:space-between;
+	width: 100%
+}
+
+
+.info{
+	margin-left : 1.1rem;
+	margin-right: 1.1rem;
+	font-size:1.1;
+	font-weight: bold;
+	font-weight: bold;
+	color: #ff9e46;
+}

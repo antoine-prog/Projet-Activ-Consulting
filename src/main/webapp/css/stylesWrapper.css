@@ -1,0 +1,67 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
+h4 {
+  color:white;
+  text-align: center;
+}
+
+
+.debuterSurNotreSite {
+	text-align:center;
+	width:100%;
+	background: #ff952b;
+	border-radius:20px;
+	box-shadow: -8px 12px 6px rgba(0,0,0,0.5);
+}
+
+.questionAnime,
+.questionFilm,
+.questionManga,
+.questionSerie {
+	padding:10px 50px 10px 50px;
+	background: #555555;
+	border-radius:20px;
+	box-shadow: -8px 12px 6px rgba(0,0,0,0.5);
+}
+
+
+/**33333333333333---Slick slider----333333333333333333**/
+.slider {
+	width: 90%;
+	margin: 20px auto;
+}
+
+.slick-slide {
+	margin: 0px 10px;
+}
+
+.slick-slide img {
+	width: 100%;
+}
+
+.slick-prev:before, .slick-next:before {
+	color: #151728;
+}
+
+/***33333333333333333333--Card du slider--333333333333333333333333**/
+.card-img-top {
+	height: 21rem;
+}
+
+.card-footer {
+	color: #151728;
+	height: 9rem;
+}
+
+.filmPropose {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+
+
+
+
